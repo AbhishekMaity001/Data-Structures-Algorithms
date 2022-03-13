@@ -10,17 +10,19 @@ def fibonacci(n):
         b = 1
         print(a)
         print(b)
-        while n>2:
+        while n > 2:
             c = a+b
             print(c)
             a, b = b, c
-            n = n- 1
+            n = n - 1
+
 
 def fib(n):
     if n<=1:
         return n
     else:
         return fib(n-1)+fib(n-2)
+
 
 if __name__ == '__main__':
     count=6
@@ -29,4 +31,5 @@ if __name__ == '__main__':
     else:
         for i in range(count):
             print(fib(i), end=" ")
+
 
