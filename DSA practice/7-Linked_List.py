@@ -1,5 +1,5 @@
 
-# Linked List
+# Linked List Operations
 class Node:
     """
     Node Class will just create a Node which contains 2 things/objects
@@ -99,7 +99,6 @@ class Linky:
     #     while(last.next):
     #         last = last.next
     #     print(last.data)
-
 
 if __name__ == '__main__':
     linked_list = Linky()
