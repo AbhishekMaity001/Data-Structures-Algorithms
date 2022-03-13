@@ -20,5 +20,5 @@ def function2(n):
 
 
 if __name__ == '__main__':
-    n=3
+    n = 3
     function2(3)
