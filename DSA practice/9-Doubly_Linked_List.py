@@ -63,7 +63,7 @@ class DoublyLinkedList:
         3. key is in between.
         """
         if self.head or key is None:
-            print("Key is None or self.head is None")
+            print("Key is None or self.head is None!!")
 
         # Case 1 ... here key is your object
         if self.head == key:
