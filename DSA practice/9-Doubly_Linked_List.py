@@ -1,4 +1,4 @@
-import gc  # Responsible for grabage collection
+import gc  # Library responsible for grabage collection
 
 
 class Node:
