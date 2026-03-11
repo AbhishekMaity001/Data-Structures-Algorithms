@@ -2,7 +2,7 @@
 # Linked List Operations
 class Node:
     """
-    Node Class will just create a Node which contains 2 things/objects
+    Node Class will just create a Node which contains 2 attributes or say things/objects
     1. data
     2. next (pointer to the next data/value)
     """
@@ -21,21 +21,21 @@ class Linky:
         """INSERTING THE DATA AT THE TOP OF THE NODE"""
 
         new_node = Node(new_value)  # Creating a Node class object
-        new_node.next = self.head   # Changing the new_node.next variable
-        self.head = new_node  # Putting the current head info as the new_node that is recently inserted
+        new_node.next = self.head   # Changing the new_node.next variable... means changing the current new_node next property to None
+        self.head = new_node  # Putting the current head info as the new_node which is recently inserted
 
     def insertAt(self, prev_node, new_value):
         """INSERTING A NODE AT A CERTAIN POSITION"""
         if prev_node is None:
             print("Previous Node is empty!")
-        new_node = Node(new_value)
+        new_node = Node(new_value)  # First step to create the Node!
         new_node.next = prev_node.next
         prev_node.next = new_node
 
     def append(self, new_value):
         """APPENDING THE NODE AT THE END OF THE LINKED LIST"""
         new_node = Node(new_value)  # First step to create the Node!
-        if self.head is None:  # If head is none that means that Linkedlist is has no values so set the head first
+        if self.head is None:  # If head is "None" that means that Linkedlist is has no values so set the head first
             self.head = new_node
             return
         last = self.head  # The head is the 1st node... so the logic here is the end node next will be  None
